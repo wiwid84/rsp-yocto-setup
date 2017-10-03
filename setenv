@@ -4,9 +4,9 @@ else
 	export ROOT=$(readlink -f ${PWD})
 fi
 
-SOURCEDIR="$ROOT/sources"
+SOURCEDIR="$ROOT/../sources"
 
-source $ROOT/sources/poky/oe-init-build-env "$@"
+source $ROOT/../sources/poky/oe-init-build-env "$@"
 
 metas=$(find "$SOURCEDIR" -path "*-raspberrypi/conf/layer.conf")
 
